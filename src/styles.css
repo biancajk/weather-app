@@ -65,3 +65,15 @@ h3 {
   text-align: right;
   margin-left: 134px;
 }
+
+.github {
+  margin-left: 310px;
+}
+
+.github-link {
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
