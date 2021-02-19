@@ -56,11 +56,13 @@ function showWeather(response) {
   let currentTemperatureElement = document.querySelector("h2");
   let currentTemperature = Math.round(response.data.main.temp);
   let currentCity = document.querySelector("h1");
+  let descriptionElement = document.querySelector("#description");
   let iconElement = document.querySelector("#icon");
   currentCity.innerHTML = response.data.name;
   currentTemperatureElement.innerHTML = `${currentTemperature}°C`;
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  
 }
 function showPosition(position) {
   let apiKey = "604a0860a7678715cd8fffed2efc4cf1";
