@@ -46,6 +46,14 @@ h3 {
   color: #00587a;
 }
 
+.precipitation {
+  margin-left: 160px;
+}
+
+.wind-speed {
+  margin-left: 160px;
+}
+
 .weather-icons {
   width: 60%;
   margin-left: 74px;

@@ -40,6 +40,7 @@ function showCity(event) {
 }
 let searchButton = document.querySelector("#search-form");
 searchButton.addEventListener("submit", showCity);
+
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let h2 = document.querySelector("#current-temperature");
@@ -59,7 +60,7 @@ function showWeather(response) {
   currentCity.innerHTML = response.data.name;
   currentTemperatureElement.innerHTML = `${currentTemperature}°C`;
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  
+
 }
 function showPosition(position) {
   let apiKey = "604a0860a7678715cd8fffed2efc4cf1";
