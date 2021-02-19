@@ -54,6 +54,13 @@ h3 {
   margin-left: 160px;
 }
 
+.weather-description {
+  position: relative;
+  top: -25px;
+  left: 198px;
+  font-weight: bold;
+}
+
 .weather-icons {
   width: 60%;
   margin-left: 74px;
@@ -71,7 +78,7 @@ h3 {
 
 .current-day {
   text-align: right;
-  margin-left: 134px;
+  margin-left: 83px;
 }
 
 .github {
