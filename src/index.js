@@ -79,3 +79,14 @@ function getCurrentLocation() {
 }
 let currentLocationButton = document.querySelector(".fas.fa-map-marker-alt");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (14 * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#current-temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
