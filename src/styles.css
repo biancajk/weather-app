@@ -89,3 +89,12 @@ h3 {
 .github-link:hover {
   text-decoration: underline;
 }
+
+.active {
+  color: black;
+  cursor: default;
+}
+
+.active:hover {
+  text-decoration: none;
+}
