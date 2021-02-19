@@ -58,10 +58,12 @@ function showWeather(response) {
   let currentCity = document.querySelector("h1");
   let descriptionElement = document.querySelector("#description");
   let iconElement = document.querySelector("#icon");
+  let windElement = document.querySelector("#wind-speed");
   currentCity.innerHTML = response.data.name;
   currentTemperatureElement.innerHTML = `${currentTemperature}°C`;
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   descriptionElement.innerHTML = response.data.weather[0].description;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
   
 }
 function showPosition(position) {
